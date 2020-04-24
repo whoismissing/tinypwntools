@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+
+import os
+
+def print_options():
+    print('There are three options')
+    print('1: Nothing will happen')
+    print('2: Nothing will happen')
+    print('3: Spawn /bin/bash')
+
+def main():
+    while True:
+        print_options()
+        option = int(input('>> '))
+        print('You chose option: ', option)
+
+        if option == 1:
+            print('1 - Nothing happened')
+        elif option == 2:
+            print('2 - Nothing happened')
+        elif option == 3:
+            os.system('/bin/bash')
+        else:
+            print('Unknown option')
+
+main()
